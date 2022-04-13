@@ -1,16 +1,11 @@
-# SentenceExtractor
+# Install
 
-A JS script to extract sentences from a piece of text (Advanced checking)
-
-[![NPM](https://nodei.co/npm/sentence-extractor.png?downloads=true&stars=true)](https://nodei.co/npm/sentence-extractor/)
-
-# Download
-
-```npm install sentence-extractor```
+```npm install git+https://github.com/s2dent/SentenceExtractor.git```
+or ```yarn add sentence-extractor@git+https://github.com/s2dent/SentenceExtractor.git```
 
 Add it in your code as follows
 
-```var extract = require('sentence-extractor').extract;```
+```const extract = require('sentence-extractor').extract;```
 
 # Useage example
 
