@@ -18,5 +18,5 @@ console.log('');
 
 console.log('Testing extraction with specific word');
 console.log('--------------------------------------');
-console.log(extract('This is a sentence. Cool! Maybe? 3.141592 is a number.', {word: 'is'}));
+console.log(extract('This is a sentence. Cool! Maybe? 3.141592 is a number.  Okay, den you listen to me!', {word: 'is'}));
 

@@ -35,8 +35,10 @@ function extract(body_text, {word, abbrev, divider} = {}) {
             let sentence = body_text.slice(start, Math.min(body_text.length, i + 1)).trim();
             if (!word) {
                 sentences.push(sentence);
-            } else if (sentence.toLowerCase().includes(word.toLowerCase())) {
-                sentences.push(sentence);
+            } else {
+                const regex = new RegExp(`([^\\w])${word}([^\\w])`, 'i');
+                if (regex.test(sentence))
+                    sentences.push(sentence);
             }
             start = i + 1;
         }
